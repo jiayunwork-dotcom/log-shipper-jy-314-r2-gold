@@ -1,0 +1,5 @@
+?   	log-shipper	[no test files]
+?   	log-shipper/internal/report	[no test files]
+ok  	log-shipper/internal/bundle	0.004s
+ok  	log-shipper/internal/collect	0.003s
+ok  	log-shipper/internal/index	0.002s

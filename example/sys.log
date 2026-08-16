@@ -1,0 +1,4 @@
+boot: kernel loaded
+error: disk I/O error on /dev/sda1
+info: health check passed
+warn: high memory usage

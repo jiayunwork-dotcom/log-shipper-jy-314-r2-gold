@@ -1,0 +1,5 @@
+info: service started
+error: database connection refused
+warn: retrying connection
+error: timeout while waiting for response
+info: service stopped

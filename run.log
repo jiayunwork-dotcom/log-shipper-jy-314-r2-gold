@@ -1,0 +1,4 @@
+usage:
+  log-shipper collect --src DIR --out BUNDLE
+  log-shipper search --bundle BUNDLE --keyword K
+error: missing command

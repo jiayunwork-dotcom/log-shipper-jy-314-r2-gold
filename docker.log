@@ -1,0 +1,49 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 205B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 101B done
+#3 DONE 0.0s
+
+#4 [1/6] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#4 resolve docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94 0.0s done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 12.70kB done
+#5 DONE 0.0s
+
+#6 [2/6] WORKDIR /src
+#6 CACHED
+
+#7 [3/6] COPY go.mod go.sum ./
+#7 DONE 0.0s
+
+#8 [4/6] RUN go mod download || true
+#8 0.101 go: no module dependencies to download
+#8 DONE 0.1s
+
+#9 [5/6] COPY . .
+#9 DONE 0.0s
+
+#10 [6/6] RUN go build ./...
+#10 DONE 4.8s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 1.9s done
+#11 exporting manifest sha256:6e181944eaf823cffcd37c78662ea5b6170756f8bbbe8c9fa7a36dd7d2739509
+#11 exporting manifest sha256:6e181944eaf823cffcd37c78662ea5b6170756f8bbbe8c9fa7a36dd7d2739509 done
+#11 exporting config sha256:b9de579cef76c79187bd222558f7bf625b8acc15864b59c53f965f47379c688b done
+#11 exporting attestation manifest sha256:524082f6dd66564d1ab1d8ed9ca4ee7e028759dfb81a4d799a9657794b9fb948 done
+#11 exporting manifest list sha256:66df620ad7f2ce0de965a753f575544f15b70fc4b2feb107d9e1a9b113fdb700 0.0s done
+#11 naming to docker.io/library/log-shipper:verify done
+#11 unpacking to docker.io/library/log-shipper:verify
+#11 unpacking to docker.io/library/log-shipper:verify 0.2s done
+#11 DONE 2.4s

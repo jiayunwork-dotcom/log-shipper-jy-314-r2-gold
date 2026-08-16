@@ -1,0 +1,5 @@
+?   	log-shipper	[no test files]
+ok  	log-shipper/internal/bundle	(cached)
+ok  	log-shipper/internal/collect	(cached)
+ok  	log-shipper/internal/index	(cached)
+?   	log-shipper/internal/report	[no test files]
