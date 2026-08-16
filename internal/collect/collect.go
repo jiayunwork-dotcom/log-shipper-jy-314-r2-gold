@@ -25,7 +25,7 @@ func Collect(srcDir string) ([]Record, error) {
 		if e.IsDir() {
 			continue
 		}
-		if !strings.HasSuffix(e.Name(), ".log") {
+		if !strings.HasSuffix(strings.ToLower(e.Name()), ".log") {
 			continue
 		}
 		data, err := os.ReadFile(filepath.Join(srcDir, e.Name()))
